@@ -1,0 +1,26 @@
+baseURL = "http://example.org/"
+languageCode = "ca"
+defaultContentLanguage = "ca"
+title = "Iniciació a Apertium"
+theme = "learn"
+
+[params]
+sidebarColor = "orange"
+disableSearch = true
+themeVariant = "red"
+customCss = ["css/site.css"]
+
+[[menu.shortcuts]]
+name = "Lloc web d'Apertium"
+url = "https://www.apertium.org"
+weight = 10
+
+[[menu.shortcuts]]
+name = "Documentació d'Apertium"
+url = "https://wiki.apertium.org"
+weight = 20
+
+[[menu.shortcuts]]
+name = "Codi font d'Apertium"
+url = "https://www.github.com/apertium"
+weight = 30
