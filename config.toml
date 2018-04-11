@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://apertium-tradumatica2018.netlify.com/"
 languageCode = "ca"
 defaultContentLanguage = "ca"
 title = "Iniciació a Apertium"
