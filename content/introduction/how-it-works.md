@@ -1,17 +1,23 @@
 ---
 title: "Com funciona?"
-weight: 20
+weight: 12
 disableToc: true
 ---
 
-Apertium es basa en una cadena de mòduls que alteren un text de manera lineal. Els principals són els diccionaris. Cada parell està format per tres diccionaris de dos tipus:
+Apertium és una plataforma de traducció automàtica formada per mòduls connectats en cadena. Aquests mòduls no estan dissenyats per a una combinació de llengües en concret; les dades lingüístiques dels parells estan programades a part, de manera que és possible crear parells nous sense haver de modificar els mòduls en si.
 
-* Diccionari monolingüe: n'hi ha dos, un per a cada llengua del parell. Conté entrades lèxiques (paraules o multiparaules) i la seva informació morfològica (conjugacions, declinacions, etc.).
-* Diccionari bilingüe: n'hi ha un i conté una llista d'entrades lèxiques en les dues llengües del parell. Estableix com es relacionen les entrades de les dues llengües entre si.
+![Apertium pipeline](/images/Apertium_system_architecture.png)
 
-A més, hi ha dos altres mòduls imprescindibles:
+Els mòduls es comuniquen mitjançant una cadena de text que al principi conté text original. Cada mòdul l'altera fent la tasca concreta per al qual ha estat programat fins que després de l'últim mòdul el text es troba en la llengua d'arribada. Exemple de traducció de la frase «The blue house» de l'anglès al català («La casa blava»):
 
-* Desambiguador: en cas d'ambigüitat durant l'anàlisi de la llengua d'origen, tria la millor opció a partir d'un model estadístic.
-* Regles de transfèrencia: aplica canvis a les entrades lèxiques (canvis d'ordre, de gènere, declinacions, etc.).
-
-Hi ha molts altres mòduls que amplien les possibilitats d'Apertium.
+```
+1. The blue house
+2. ^The/the<det><def><sp>$ ^blue/blue<adj><sint>/blue<n><sg>$ ^house/house<n><sg>/house<vblex><inf>/house<vblex><pres>/house<vblex><imp>$ 
+3. ^The/The<det><def><sp>$ ^blue/blue<adj><sint>$ ^house/house<n><sg>$ 
+4. ^The<det><def><sp>$ ^blue<adj><sint>$ ^house<n><sg>$ 
+5. ^The<det><def><sp>/El<det><def><GD><ND>$ ^blue<adj><sint>/blau<adj>$ ^house<n><sg>/casa<n><f><sg>/cambra<n><f><sg>/càmera<n><f><sg>$ 
+6. ^Det_nom_adj<SN><DET><f><sg>{^el<det><def><3><4>$ ^casa<n><3><4>$ ^blau<adj><3><4>$}$ 
+7. ^El<det><def><f><sg>$ ^casa<n><f><sg>$ ^blau<adj><f><sg>$ 
+8. ~La casa blava 
+9. La casa blava 
+```

@@ -18,7 +18,7 @@ Tot i que l'exemple és correcte i funcional, definir les equivalències entre e
 <e><p><l>house<s n="n"/></l><r>casa<s n="n"/><s n="f"/></r></p></e>
 ``` 
 
-En aquest cas, l'entrada serviria tant per a «house<n><sg>» com per a «house<n><pl>».
+En aquest cas, l'entrada serviria tant per a «house\<n\>\<sg\>» com per a «house\<n\>\<pl\>».
 
 De la mateixa manera que amb els diccionaris monolingües, és possible definir paradigmes:
 
@@ -37,7 +37,7 @@ Finalment, hi ha l'opció de definir entrades no bidireccionals. En el cas dels 
 <e r="RL"><p><l>dream<s n="vblex"/></l><r>somniar<s n="vblex"/></r></p></e>
 ```
 
-Això és molt útil quan una de les dues llengües té gènere i l'altra no, com passa amb l'anglès i el català. Exemple (l'etiqueta «<GD>» indica que Apertium ha d'escollir entre un dels dos gèneres en funció de la informació que tingui):
+Això és molt útil quan una de les dues llengües té gènere i l'altra no, com passa amb l'anglès i el català. Exemple (l'etiqueta «\<GD\>» indica que Apertium ha d'escollir entre un dels dos gèneres en funció de la informació que tingui):
 
 ```xml
 <e r="LR"><p><l>president<s n="n"/></l><r>president<s n="n"/><s n="GD"/></r></p></e>
