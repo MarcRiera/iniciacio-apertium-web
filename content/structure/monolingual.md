@@ -3,13 +3,13 @@ title: "Diccionari monolingüe"
 anchor: "Diccionari monolingüe"
 weight: 31
 ---
-Dins d'un parell de llengües, hi ha dos diccionaris monolingües (un per a cada llengua). Aquests diccionaris contenen una llista d'entrades lèxiques amb etiquetes que proporcionen informació morfològica. Els diccionaris fan servir el format XML, i s'estructuren en dues columnes: a l'esquerra hi ha la forma superficial de l'entrada (amb flexió i sense etiquetes), i a la dreta hi ha la forma interna (l'arrel amb etiquetes). La forma interna serveix per a agrupar en una mateixa entrada diferents formes superficials, com les conjugacions verbals o les diferents formes dels adjectius.
+Els diccionaris monolingües contenen una llista d'entrades lèxiques amb etiquetes que proporcionen informació morfològica. S'estructuren en dues columnes: a l'esquerra hi ha la forma superficial de l'entrada (amb flexió i sense etiquetes), i a la dreta hi ha la forma interna (l'arrel amb etiquetes). La forma interna serveix per a agrupar en una mateixa entrada diferents formes superficials, com les conjugacions verbals o les diferents formes dels adjectius.
 
 Exemples d'entrades lèxiques en català ("casa", substantiu femení):
 
 ```xml
-<l>casa</l><r>casa<s n="n"/><s n="f"/><s n="sg"/></r>
-<l>cases</l><r>casa<s n="n"/><s n="f"/><s n="pl"/></r>
+<e><p><l>casa</l><r>casa<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>cases</l><r>casa<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
 ```
 La primera entrada de l'exemple anterior indica que la forma superficial «casa» equival a la forma interna «casa<n><f><sg>» (nom femení singular). La segona indica que la forma superficial «cases» equival a la forma interna «casa<n><f><pl>» (nom femení plural).
 
@@ -28,3 +28,10 @@ Un paradigma és una entrada lèxica que serveix de model per a d'altres. "Taula
 ```
 
 Els paradigmes permeten estalviar temps i espai, i milloren substancialment l'organització interna dels diccionaris.
+
+Finalment, hi ha l'opció de definir entrades no bidireccionals. En el cas dels diccionaris monolingües, "LR" (left-to-right) indica que una entrada només es pot analitzar, i "RL" indica que només es pot generar. Exemple:
+
+```xml
+<e r="LR" lm="somniar"><i>somni</i><par n="cant/ar__vblex"/></e>
+```
+

@@ -1,7 +1,7 @@
 baseURL = "https://apertium-tradumatica2018.netlify.com/"
 languageCode = "ca"
 defaultContentLanguage = "ca"
-title = "Apertium: traducció lliure per a tothom"
+title = "Apertium: traducció automàtica lliure per a tothom"
 theme = "learn"
 
 [params]
