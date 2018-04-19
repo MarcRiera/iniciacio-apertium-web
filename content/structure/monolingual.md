@@ -27,7 +27,7 @@ Un paradigma és una entrada lèxica que serveix de model per a d'altres. "Taula
 <e lm="taula"><i>taul</i><par n="cas/a__n"/></e>
 ```
 
-Els paradigmes permeten estalviar temps i espai, i milloren substancialment l'organització interna dels diccionaris.
+Els paradigmes permeten estalviar temps i espai, i contribueixen substancialment a la bona organització interna dels diccionaris.
 
 Finalment, hi ha l'opció de definir entrades no bidireccionals. En el cas dels diccionaris monolingües, "LR" (left-to-right) indica que una entrada només es pot analitzar, i "RL" indica que només es pot generar. Exemple:
 
