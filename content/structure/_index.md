@@ -1,11 +1,11 @@
 ---
-title: "Funcionament"
+title: "Estructura"
 weight: 30
 pre: "<b>3. </b>"
 chapter: true
 ---
 ### Capítol 3
 
-# Funcionament
+# Estructura
 
-Descobriu el funcionament intern d'Apertium i com contribuir-hi.
+Descobriu l'estructura interna dels fitxers d'Apertium.
