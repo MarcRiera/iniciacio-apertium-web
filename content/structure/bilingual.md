@@ -3,7 +3,7 @@ title: "Diccionari bilingüe"
 anchor: "Diccionari bilingüe"
 weight: 32
 ---
-El diccionaris bilingüe conté una llista d'equivalències entre entrades de les dues llengües que formen el parell. S'estructura en dues columnes: a l'esquerra hi ha la forma interna amb etiquetes de l'entrada de la primera llengua, i a la dreta hi ha la forma interna amb etiquetes equivalent de la segona llengua.
+El diccionari bilingüe conté una llista d'equivalències entre entrades de les dues llengües que formen el parell. S'estructura en dues columnes: a l'esquerra hi ha la forma interna amb etiquetes de l'entrada de la primera llengua, i a la dreta hi ha la forma interna amb etiquetes equivalent de la segona llengua.
 
 Exemples d'entrades bilingües entre l'anglès i el català:
 

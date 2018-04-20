@@ -8,4 +8,4 @@ chapter: true
 
 # Estructura
 
-Descobriu l'estructura interna dels fitxers d'Apertium.
+Descobriu l'estructura interna dels fitxers lingüístics d'Apertium.
