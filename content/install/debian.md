@@ -1,7 +1,8 @@
 ---
-title: "Instal·lació d'Apertium a Linux (Tradumàtix)"
-weight: 20
+title: "Instal·lació d'Apertium a Linux (Debian)"
+weight: 21
 disableToc: true
+draft: true
 ---
 1. Obriu el terminal, escriviu l'ordre següent i premeu Intro:
 

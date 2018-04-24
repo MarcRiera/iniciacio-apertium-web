@@ -8,4 +8,4 @@ chapter: true
 
 # Instal·lació
 
-Apreneu a instal·lar els paquets de desenvolupament d'Apertium a l'ordinador.
+Apreneu a instal·lar els paquets de desenvolupament d'Apertium a l'ordinador i el programa Apertium Viewer.
