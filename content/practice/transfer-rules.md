@@ -5,7 +5,7 @@ weight: 42
 ---
 La complexitat i les característiques de les regles de transferència estrutural fa que sigui impossible explicar-les en poca estona, però resulta molt interessant comprovar com afecten el resultat de la traducció.
 
-1. Baixeu-vos el fitxer extra de regles d'anglès a català: http://www.example.org
+1. Baixeu-vos el [fitxer extra de regles](/files/regles-extra.zip) d'anglès a català.
 
 2. Reemplaceu el fitxer original de regles, que per defecte és buit.
 

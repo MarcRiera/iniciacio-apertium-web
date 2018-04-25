@@ -8,4 +8,4 @@ chapter: true
 
 # Introducció
 
-Conegueu els orígens i les característiques d'Apertium.
+Coneixeu els orígens i les característiques d'Apertium.

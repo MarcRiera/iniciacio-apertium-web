@@ -9,7 +9,7 @@ En aquesta pràctica aprendreu a expandir els diccionaris d'Apertium perquè rec
 
 1. Instal·leu els paquets de desenvolupament d'Apertium i Apertium Viewer.
 
-2. Baixeu-vos el parell de prova i extraieu-lo en una carpeta: http://www.example.org
+2. Baixeu-vos el [parell de prova](/files/apertium-prova.zip) i extraieu-lo en una carpeta.
 
 3. Obriu un terminal a les dues carpetes monolingües (apertium-eng i apertium-cat) i executeu:
 ```xml
